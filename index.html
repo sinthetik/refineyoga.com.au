@@ -36,16 +36,16 @@
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=161848297314454";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>    
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="container-narrow">
 
       <div class="masthead">
-        <h3 class="logo"><a href="/"><img src="img/refine_logo.png"></a></h3>        
+        <h3 class="logo"><a href="/"><img src="img/refine_logo.png"></a></h3>
         <ul class="nav nav-pills">
           <li><a href="#section-about">About</a></li>
-          <li><a href="#section-timetable">Timetable</a></li>          
-          <li class="break"><a href="#section-location">Location</a></li>
+          <li><a href="#section-timetable">Timetable</a></li>
+          <li class="location break"><a href="#section-location">Location</a></li>
           <li><a href="#section-gallery" class="hidden-phone">Gallery</a></li>
           <li><a href="#section-contact">Book / Contact</a></li>
           <li><a href="https://www.facebook.com/refineyoga">Facebook</a></li>
@@ -55,20 +55,24 @@
       <hr id='breaker'>
 
       <div id="myCarousel" class="jumbotron carousel slide">
-        
+
         <div class="carousel-inner">
           <div class="active item"><img src="img/ry-slide-02.jpg" /></div>
           <div class="item"><img src="img/ry-slide-01.jpg" /></div>
           <div class="item"><img src="img/ry-slide-03.jpg" /></div>
-        </div>        
+        </div>
 
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>        
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
       </div>
 
       <hr>
 
       <p>Boutique yoga classes for all levels in the Inner West of Melbourne: Seddon, Kingsville, Yarraville, Footscray.</p>
+
+      <div class="alert alert-success">
+        <strong>Note!</strong> Refine Yoga has <a href="#section-location">moved</a> and our <a href="#section-timetable">timetable</a> has changed! - Feb 16 2014
+      </div>
 
       <div class="fb-like" data-href="http://www.refineyoga.com.au/" data-send="true" data-width="450" data-show-faces="true"></div>
 
@@ -123,39 +127,49 @@
           <a class="fancybox" rel="gallery1" href="img/photo_warrior_two.jpg" title="Warrior Two">
             <img src="img/thumb_warrior_two.jpg" alt="" />
           </a>
-                   
 
-        </div> 
 
-      </div>     
+        </div>
+
+      </div>
 
       <hr>
 
       <div id="section-timetable">
         <h4 id="timetable">Timetable</h4>
 
-        <p>Wednesdays 7.00pm - 8.15pm - General</p>
-        <p>Thursdays 7.00pm - 8.15pm - Beginner / Prenatal</p>
-        <p>Saturdays 9.00am - 10.15am - General<p>
+        <div class="alert alert-success">
+          <strong>Note!</strong> New timetable as of 17th February 2014
+        </div>
+
+        <p>Mondays 6.45pm - 8.00pm - Beginners Yoga with Polly</p>
+        <p>Wednesdays 7.00pm - 8.15pm - General Yoga with Lesa</p>
+        <p>Thursdays 6.45pm - 8.00am - Prenatal Yoga with Polly<p>
+        <p>Saturdays 9.00am - 10.15am - General Yoga with Claire<p>
       </div>
 
       <hr>
 
       <div id="section-location">
         <h4 id="location">Location</h4>
-        <p>Seddon Uniting Church Hall<br>
-          50 Mackay St<br>
+
+        <div class="alert alert-success">
+          <strong>Note!</strong> New address as of 17th February 2014
+        </div>
+
+        <p>Pilgrim Unity Church Yarraville<br>
+          Corner of Bayview and Montague Streets<br>
           Yarraville 3013</p>
 
-        <p><a href="https://maps.google.com/maps?q=50+Mackay+St,+Seddon,+Victoria,+Australia&hl=en&sll=37.0625,-95.677068&sspn=53.564699,77.695313&oq=50+mackay+st,+seddon&hnear=50+Mackay+St,+Yarraville+Victoria+3013,+Australia&t=m&z=17&iwloc=A">Get Directions</a></p>
+        <p><a href="https://www.google.com.au/maps/place/Bayview+Rd+%26+Montague+St/@-37.8119245,144.8851966,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad6675a8bd2afdd:0x9bd2806117885932">Get Directions</a></p>
 
         <div id="map" class="map"></div>
-            
+
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script type="text/javascript">
           function initialize() {
 
-            var myLatlng = new google.maps.LatLng(-37.809419,144.890292);
+            var myLatlng = new google.maps.LatLng(-37.811925,144.885197);
             var myOptions = {
               zoom: 15,
               center: myLatlng,
@@ -168,34 +182,34 @@
               mapTypeId: google.maps.MapTypeId.ROADMAP
             }
             var map = new google.maps.Map(document.getElementById("map"), myOptions);
-            
+
             var infowindow = new google.maps.InfoWindow({
                 content: "holding..."
             });
-            
+
             var refineyoga = new google.maps.Marker({
-                position: new google.maps.LatLng(-37.809419,144.890292),
+                position: new google.maps.LatLng(-37.811925,144.885197),
                 map: map,
                 title: 'Seddon Uniting Church Hall'
             });
-            
+
             google.maps.event.addListener(refineyoga, 'click', function() {
-                infowindow.setContent('<b>Refine Yoga</b><br />Seddon Uniting Church Hall<br />50 Mackay St<br />Yarraville 3013');
+                infowindow.setContent('<b>Refine Yoga</b><br />Pilgrim Unity Church Yarraville<br />Cnr of Bayview and Montague Streets<br />Yarraville 3013');
                 infowindow.open(map, refineyoga);
             });
-            
+
           }
-        </script>        
+        </script>
       </div>
 
-      <hr>      
+      <hr>
 
       <div id="section-contact">
         <h4 id="contact">Book / Contact</h4>
         <p>Classes are limited to 10 people so it is helpful if you email <a href="mailto:info@refineyoga.com.au">info@refineyoga.com.au</a> to confirm your place on the mat for a certain day & time. No bookings are required if you bring your own mat. Please arrive 5 minutes early to classes. Blankets are provided in the cooler months. If you have any health concerns please advise before the class. It is best not to eat for at least 2 hours before class. You might want to bring a hand towel, water bottle, jumper and socks.</p>
       </div>
 
-      <hr>      
+      <hr>
 
       <div class="footer">
         <p>&copy; Refine Yoga 2013</p>
@@ -227,6 +241,17 @@
 
         })
 
+        $('.alert a').click(function(e) {
+            console.log('yo', $(this).attr('href'));
+
+
+
+            $('.masthead a[href=' + $(this).attr('href') + ']').trigger('click');
+
+          e.preventDefault();
+
+        })
+
         $('.carousel').carousel();
 
         $(".fancybox").fancybox({
@@ -250,7 +275,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    </script>    
+    </script>
 
   </body>
 </html>
